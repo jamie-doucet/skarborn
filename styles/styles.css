@@ -42,6 +42,10 @@ body{
     color: white;
 }
 
+.hero-bottom-text{
+    width: 60%;
+}
+
 .section-hero{
     background-color: #101010;
 }
@@ -151,6 +155,9 @@ body{
     }
     .nav-icon-sm{
         display: block !important;
+    }
+    .hero-bottom-text{
+        width: 100% !important;
     }
     .employee {
       flex-direction: column !important;
