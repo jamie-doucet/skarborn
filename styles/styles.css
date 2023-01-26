@@ -1,0 +1,189 @@
+body{
+    background-image: url("../img/metal_dimmed.jpg.png");
+    font-family: 'Montserrat', sans-serif;
+    background-color: #101010;
+    color: white;
+}
+
+.navbar{
+    padding-top:2.5rem ;
+    padding-left:2.5rem ;
+    font-size: 1.3rem;
+    font-weight: bold;
+    z-index: 100;
+}
+
+.navbar-dark {
+	--bs-navbar-color: rgb(255, 255, 255);
+}
+
+.nav-icon{
+    height: 5rem;
+
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+}
+
+.nav-link:hover{
+    color:#ad0101;
+}
+
+.section{
+    background-size: cover;
+    padding-top: 3rem !important;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+
+    padding-bottom: 3rem !important;
+    color: white;
+}
+
+.section-hero{
+    background-color: #101010;
+}
+
+.employee-picture{
+    width: 300px;
+    height: 300px;
+}
+
+.service-image-container{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.service-image{
+    width: 100%;
+    height: 100%;
+}
+
+.service-image-lg{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.icon{
+    height: 50px;
+    width: 50px;
+}
+
+.w-85 {
+	width: 85% !important;
+}
+
+.course-container {
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    padding: 20px;
+    margin: 3rem;
+    transition: 300ms;
+    text-align: center;
+}
+
+.course-container:hover {
+    border: 1px solid #ad0101;
+    color: #ad0101;
+}
+
+.icon {
+	margin-right: 3rem !important;
+}
+
+.display-1, .h2{
+    
+    font-weight: bold;
+}
+
+.h3, .h4, .h5, .display-3{
+    font-weight: lighter;
+}
+
+.hero{
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hero-text{
+    text-align: left;
+    width: 85% !important;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-landing::before{
+    background-image: url('../img/background.png');
+    background-size: cover;
+}
+
+
+.hero-training::before{
+    background-image: url('../img/Instruction.png');
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    background-size: cover;
+    opacity: .4;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .nav-icon{
+        display: none;
+    }
+    .nav-icon-sm{
+        display: block !important;
+    }
+    .employee {
+      flex-direction: column !important;
+      
+    }
+    .employee-picture{
+        margin-bottom: 3rem !important;
+    }
+    .service-item-container{
+        padding-top: 3rem;
+        width: 100% !important;
+    }
+    .row-service{
+        width: 100% !important;
+        flex-direction: column;
+    }
+    .service-image-container{
+        padding: 0 !important;
+        width: 100% !important;
+    }
+    .service-text-container{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        width: 100% !important;
+    }
+    .course-container{
+        margin: 1rem;
+    }
+    .hero-training{
+        padding: 0 !important;
+    }
+    #training-text{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+  }
