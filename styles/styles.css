@@ -149,13 +149,13 @@ body{
     right: 0px;
     bottom: 0px;
     left: 0px;
-    mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: -webkit-linear-gradient(black 40%, rgba(0, 0, 0, 0));
+    -webkit-mask-image: -webkit-linear-gradient(black 40%, rgba(0, 0, 0, 0));
     background-color: rgba(0, 0, 0, 0.4);
 }
 
 .hero-landing::before{
-    background-image: url('../img/background.png');
+    background-image: url("../img/background.png");
     background-size: cover;
 }
 
