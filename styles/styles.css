@@ -1,20 +1,20 @@
 body{
-    background-image: url("../img/metal_dimmed.jpg.png");
+    background-image: url("../img/metal_dimmed.png");
     font-family: 'Montserrat', sans-serif;
     background-color: #101010;
     color: white;
 }
 
 .navbar{
-    padding-top:2.5rem ;
-    padding-left:2.5rem ;
     font-size: 1.3rem;
     font-weight: bold;
     z-index: 100;
 }
 
+
 .navbar-dark {
 	--bs-navbar-color: rgb(255, 255, 255);
+    width:100%;
 }
 
 .nav-icon{
@@ -55,6 +55,16 @@ body{
     height: 300px;
 }
 
+.q-items-container{
+    display: flex;
+    justify-content: center;
+}
+
+.qualifications-item{
+    padding-top: 3rem;
+    text-align: left;
+}
+
 .service-image-container{
     padding-left: 3rem;
     padding-right: 3rem;
@@ -73,6 +83,7 @@ body{
 }
 
 .icon{
+    color: #ad0101;
     height: 50px;
     width: 50px;
 }
@@ -86,8 +97,16 @@ body{
     border: 1px solid #ffffff;
     padding: 20px;
     margin: 3rem;
+    width: 25%;
+    min-width: 200px;
     transition: 300ms;
     text-align: center;
+    display: flex;
+}
+
+.course-container > .h5{
+    width: 100%;
+    align-self: center;
 }
 
 .course-container:hover {
@@ -110,15 +129,15 @@ body{
 
 .hero{
     position: relative; 
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 
 .hero-text{
+    margin-top:3rem;
     text-align: left;
     width: 85% !important;
 }
@@ -192,5 +211,14 @@ body{
     #training-text{
         margin-left: 0 !important;
         margin-right: 0 !important;
+    }
+    .w-75{
+        width: 100% !important;
+    }
+  }
+
+  @media only screen and (max-width: 991px){
+    .navbar-dark{
+        background-color: #0f0f0fed;
     }
   }
