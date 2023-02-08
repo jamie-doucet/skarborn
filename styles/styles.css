@@ -5,6 +5,13 @@ body{
     color: white;
 }
 
+.material-symbols-outlined{
+    font-size: 3rem;
+    color:#ad0101;
+    margin-right: 1rem;
+    font-weight: lighter;
+}
+
 .navbar{
     font-size: 1.3rem;
     font-weight: bold;
@@ -39,7 +46,7 @@ body{
     padding-right: 3rem !important;
 
     padding-bottom: 3rem !important;
-    color: white;
+    color: #dbdbdb;
 }
 
 .hero-bottom-text{
@@ -55,7 +62,27 @@ body{
     height: 300px;
 }
 
+.service-section{
+    padding-left: 15rem;
+    padding-right: 15rem;
+
+    padding-bottom: 0;
+}
+
+.icon-text{
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.row-service{
+    padding-bottom: 7rem;
+}
+
 .q-items-container{
+    padding-right: 10rem;
+    padding-left: 10rem;
+
     display: flex;
     justify-content: center;
 }
@@ -65,14 +92,27 @@ body{
     text-align: left;
 }
 
-.service-image-container{
-    padding-left: 3rem;
-    padding-right: 3rem;
+.qualifications-item > .d-flex{
+    align-items: center;
 }
+
+.col-2 > .material-symbols-outlined{
+    font-size: 5rem;
+    font-weight: lighter;
+    margin:0;
+}
+.col-1 > .material-symbols-outlined{
+    font-size: 5rem;
+    font-weight: lighter;
+    margin:0;
+}
+
 
 .service-image{
     width: 100%;
     height: 100%;
+    mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 }
 
 .service-image-lg{
@@ -80,6 +120,11 @@ body{
     align-items: center;
     width: 100%;
     height: 100%;
+}
+
+.structual-item{
+    display: flex;
+    align-items: center;
 }
 
 .icon{
@@ -134,6 +179,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 0px !important;
 }
 
 .hero-text{
@@ -149,13 +195,13 @@ body{
     right: 0px;
     bottom: 0px;
     left: 0px;
-    mask-image: -webkit-linear-gradient(black 40%, rgba(0, 0, 0, 0));
-    -webkit-mask-image: -webkit-linear-gradient(black 40%, rgba(0, 0, 0, 0));
+    mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
     background-color: rgba(0, 0, 0, 0.4);
 }
 
 .hero-landing::before{
-    background-image: url("../img/background.png");
+    background-image: url('../img/background.png');
     background-size: cover;
 }
 
@@ -185,6 +231,9 @@ body{
     .employee-picture{
         margin-bottom: 3rem !important;
     }
+    .q-items-container{
+        padding: 0;
+    }
     .service-item-container{
         padding-top: 3rem;
         width: 100% !important;
@@ -201,6 +250,9 @@ body{
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
         width: 100% !important;
+    }
+    .service-section{
+        padding: 0;
     }
     .course-container{
         margin: 1rem;
