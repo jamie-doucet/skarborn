@@ -215,6 +215,14 @@ body{
 
 
 @media only screen and (max-width: 1000px) {
+    .col-2 > .material-symbols-outlined {
+        font-size: 4rem;
+        font-weight: lighter;
+        margin: 0;
+    }
+    .icon {
+        margin-right: 1rem !important;
+    }
     .nav-icon{
         display: none;
     }
@@ -234,13 +242,20 @@ body{
     .q-items-container{
         padding: 0;
     }
-    .service-item-container{
-        padding-top: 3rem;
-        width: 100% !important;
-    }
     .row-service{
         width: 100% !important;
-        flex-direction: column;
+        padding-bottom: 0rem;
+
+    }
+    .service-item-container{
+        padding-top: 0;
+        padding-bottom: 0!important;
+        width: 100% !important;
+    }
+    .service-image{
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+
     }
     .service-image-container{
         padding: 0 !important;
@@ -249,12 +264,13 @@ body{
     .service-text-container{
         margin-top: 1.5rem;
         margin-bottom: 1.5rem;
-        width: 100% !important;
     }
     .service-section{
+        /*do for medium*/
         padding: 0;
     }
     .course-container{
+        width: 100% !important;
         margin: 1rem;
     }
     .hero-training{
