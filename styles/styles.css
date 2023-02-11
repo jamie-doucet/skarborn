@@ -41,10 +41,8 @@ body{
 
 .section{
     background-size: cover;
-    padding-top: 3rem !important;
     padding-left: 3rem !important;
     padding-right: 3rem !important;
-
     padding-bottom: 3rem !important;
     color: #dbdbdb;
 }
@@ -63,14 +61,13 @@ body{
 }
 
 .service-section{
-    padding-left: 15rem;
-    padding-right: 15rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
 
     padding-bottom: 0;
 }
 
 .icon-text{
-    gap: 2rem;
     display: flex;
     align-items: center;
 }
@@ -88,7 +85,7 @@ body{
 }
 
 .qualifications-item{
-    padding-top: 3rem;
+    padding-bottom: 3rem;
     text-align: left;
 }
 
@@ -96,7 +93,7 @@ body{
     align-items: center;
 }
 
-.col-2 > .material-symbols-outlined{
+[class*="col-"] > .material-symbols-outlined{
     font-size: 5rem;
     font-weight: lighter;
     margin:0;
@@ -127,6 +124,10 @@ body{
     align-items: center;
 }
 
+.structual-item > .h5, h5 {
+    font-size: 1.4rem;
+}
+
 .icon{
     color: #ad0101;
     height: 50px;
@@ -142,7 +143,7 @@ body{
     border: 1px solid #ffffff;
     padding: 20px;
     margin: 3rem;
-    width: 25%;
+    width: 30%;
     min-width: 200px;
     transition: 300ms;
     text-align: center;
@@ -205,6 +206,9 @@ body{
     background-size: cover;
 }
 
+#training{
+    padding-bottom:3rem;
+}
 
 .hero-training::before{
     background-image: url('../img/Instruction.png');
@@ -213,15 +217,24 @@ body{
     opacity: .4;
 }
 
+#training-text{
+    margin-right: 3rem !important;
+    margin-left: 3rem !important;
+}
 
-@media only screen and (max-width: 1000px) {
-    .col-2 > .material-symbols-outlined {
-        font-size: 4rem;
-        font-weight: lighter;
-        margin: 0;
+@media only screen and (max-width: 1596px) {
+    .service-section{
+        padding:3rem;
     }
-    .icon {
-        margin-right: 1rem !important;
+    .structual-item > .h5, h5 {
+        font-size: 1.25rem;
+    }
+    
+}
+
+@media only screen and (max-width: 1240px) {
+    .nav-item{
+        padding-left: 3rem;
     }
     .nav-icon{
         display: none;
@@ -229,6 +242,31 @@ body{
     .nav-icon-sm{
         display: block !important;
     }
+    .service-section{
+        padding:0;
+    }
+    
+}
+
+@media (max-width: 991px) {
+    [class*="col-"] > .material-symbols-outlined {
+        font-size: 4rem;
+        font-weight: lighter;
+        margin: 0;
+    }
+    .icon-text > .material-symbols-outlined {
+        font-size: 4rem !important;
+        font-weight: lighter;
+        margin: 0;
+    }
+    .section{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    .icon {
+        margin-right: 1rem !important;
+    }
+
     .hero-bottom-text{
         width: 100% !important;
     }
@@ -242,19 +280,27 @@ body{
     .q-items-container{
         padding: 0;
     }
-    .row-service{
+    .qualifications-item{
+        padding-left: 2rem;
+        text-align: left;
+    }
+    .row-service {
         width: 100% !important;
-        padding-bottom: 0rem;
-
+        padding-bottom: 6rem;
     }
     .service-item-container{
         padding-top: 0;
         padding-bottom: 0!important;
         width: 100% !important;
     }
-    .service-image{
+    .service-image {
         padding-right: 0 !important;
         padding-left: 0 !important;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 70%;
+        mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)));
 
     }
     .service-image-container{
@@ -274,19 +320,53 @@ body{
         margin: 1rem;
     }
     .hero-training{
-        padding: 0 !important;
+        padding
+        : 0 !important;
     }
     #training-text{
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+        margin-right: 0rem !important;
+        margin-left: 0rem !important;
+    }
+    .display-3 {
+        font-size: calc(1.4rem + 3.3vw);
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    .h2, h2 {
+        font-size: calc(1.2rem + .9vw);
+    }
+    .h4, h4 {
+        font-size: calc(1.2rem + .3vw);
+    }
+    .pb-5{
+        padding-bottom: 1rem !important;
+    }
+    .py-5{
+        padding: 1rem !important;
     }
     .w-75{
         width: 100% !important;
+    }    
+    .pb-5{
+        padding-bottom: 1rem !important;
     }
   }
 
-  @media only screen and (max-width: 991px){
+@media only screen and (max-width: 991px){
     .navbar-dark{
         background-color: #0f0f0fed;
     }
   }
+  
+
+@media only screen and (max-width:990px) {
+
+}
+
+@media only screen and (max-width:600px) {
+    .service-image{
+        width: 100%
+    }
+}
+
+
