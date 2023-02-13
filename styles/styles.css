@@ -206,6 +206,7 @@ body{
 .hero-landing::before{
     background-image: url('../img/background.png');
     background-size: cover;
+    background-position: right 0;
 }
 
 #training{
@@ -247,7 +248,6 @@ body{
     .service-section{
         padding:0;
     }
-    
 }
 
 @media (max-width: 991px) {
@@ -268,7 +268,9 @@ body{
     .icon {
         margin-right: 1rem !important;
     }
-
+    .hero-landing::before{
+        background-position: calc(100% + 300px) 0;
+    }
     .hero-bottom-text{
         width: 100% !important;
     }
@@ -370,5 +372,3 @@ body{
         width: 100%
     }
 }
-
-
