@@ -239,12 +239,6 @@ body{
     .nav-item{
         padding-left: 3rem;
     }
-    .nav-icon{
-        display: none;
-    }
-    .nav-icon-sm{
-        display: block !important;
-    }
     .service-section{
         padding:0;
     }
@@ -263,6 +257,12 @@ body{
     }
     .navbar-dark{
         background-color: #0f0f0fed !important;
+    }
+    .nav-icon{
+        display: none;
+    }
+    .nav-icon-sm{
+        display: block !important;
     }
     .section{
         padding-left: 1rem !important;
